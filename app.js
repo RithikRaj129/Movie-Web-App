@@ -98,7 +98,7 @@ app.use(
 // =================================================================================
 app.user(cors());
 app.get("*", (req, res) => {
-  res.setHeader("Access-Control-Allow-Credentials","true);
+  res.setHeader("Access-Control-Allow-Credentials","true");
   res.send("Running");
 });
 
