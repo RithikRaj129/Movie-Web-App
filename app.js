@@ -96,9 +96,10 @@ app.use(
 );
 
 // =================================================================================
-
+app.user(cors());
 app.get("*", (req, res) => {
-  res.send("<h1>Error 404!! Sorry, Page Not Found</h1>");
+  res.setHeader("Access-Control-Allow-Credentials","true);
+  res.send("Running");
 });
 
 let port = process.env.PORT || 3000;
